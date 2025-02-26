@@ -38,10 +38,8 @@ const squidABI = [
 export default function Home() {
   return (
     <MantineProvider
-      withGlobalStyles
-      withNormalizeCSS
       theme={{
-        colorScheme: "dark",
+        primaryShade: { dark: 9 },
         colors: {
           dark: [
             "#1a1a2e",
@@ -50,6 +48,10 @@ export default function Home() {
             "#533483",
             "#6a0572",
             "#8a2be2",
+            "#9b30ff",
+            "#c71585",
+            "#d2691e",
+            "#ff4500", // Added to ensure 10 elements
           ],
         },
         primaryColor: "dark",
